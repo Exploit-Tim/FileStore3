@@ -268,7 +268,7 @@ async def not_joined(client: Client, message: Message):
 
 #=====================================================================================##
 
-@Bot.on_message(filters.command('commands') & filters.private & admin)
+@Bot.on_message(filters.command('staff') & filters.private & admin)
 async def bcmd(bot: Bot, message: Message):        
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("• ᴄʟᴏsᴇ •", callback_data = "close")]])
     await message.reply(text=CMD_TXT, reply_markup = reply_markup, quote= True)
