@@ -272,3 +272,12 @@ async def not_joined(client: Client, message: Message):
 async def bcmd(bot: Bot, message: Message):        
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("• ᴄʟᴏsᴇ •", callback_data = "close")]])
     await message.reply(text=CMD_TXT, reply_markup = reply_markup, quote= True)
+
+#=====================================================================================##
+
+@Bot.on_message(filters.private & ~filters.command(["start", "help", "about"]))
+async def unknown_message(client, message):
+    if message.from_user.id in ADMINS:
+        return  # Admin tidak dibalas
+    await message.reply_text(USER_REPLY_TEXT)
+
