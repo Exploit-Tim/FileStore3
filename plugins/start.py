@@ -275,9 +275,4 @@ async def bcmd(bot: Bot, message: Message):
 
 #=====================================================================================##
 
-@Bot.on_message(filters.private & ~filters.command(["start", "help", "about"]))
-async def unknown_message(client, message):
-    if message.from_user.id in ADMINS:
-        return  # Admin tidak dibalas
-    await message.reply_text(USER_REPLY_TEXT)
 
