@@ -18,14 +18,14 @@ from logging.handlers import RotatingFileHandler
 #rohit_1888 on Tg
 #--------------------------------------------
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7642906663:AAGF4V6GMNsL9DW8ixEMgKyLLsEdoQl8uos")
-APP_ID = int(os.environ.get("APP_ID", "26544005")) #Your API ID from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "66f6221e5ce9109827b50eaf3d105025") #Your API Hash from my.telegram.org
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7623081302:AAHlFgeXjxLusGoKS8-rUp_CJOm8Taqg-e0")
+APP_ID = int(os.environ.get("APP_ID", "23228407")) #Your API ID from my.telegram.org
+API_HASH = os.environ.get("API_HASH", "4bfbc373619628a8e6dd1d51da8c6fbc") #Your API Hash from my.telegram.org
 #--------------------------------------------
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002554488354")) #Your db channel Id
-OWNER = os.environ.get("OWNER", "lokontolya") # Owner username without @
-OWNER_ID = int(os.environ.get("OWNER_ID", "5870285414")) # Owner id
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002797506458")) #Your db channel Id
+OWNER = os.environ.get("OWNER", "noerafuck") # Owner username without @
+OWNER_ID = int(os.environ.get("OWNER_ID", "5648296402")) # Owner id
 #--------------------------------------------
 PORT = os.environ.get("PORT", "8001")
 #--------------------------------------------
@@ -77,7 +77,7 @@ CMD_TXT = """<blockquote><b>» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:</b></blockqu
 <b>›› /admins :</b> list all admins"""
 
 #--------------------------------------------
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• ʙʏ @Zerozerozoro</b>") #set your Custom Caption here, Keep None for Disable Custom Caption
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• ʙʏ @jonathangacor</b>") #set your Custom Caption here, Keep None for Disable Custom Caption
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False #set True if you want to prevent users from forwarding files from bot
 #--------------------------------------------
 #Set true if you want Disable your Channel Posts Share button
